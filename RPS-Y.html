@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <style>
+      #wrapper {
+        margin: 2em auto;
+        padding: 2em;
+        max-width: 650px;
+        border: solid teal 3px;
+        background-color: rgb(235, 240, 245, 0.7);
+        color: black;
+        border-radius: 20px;
+        position: relative;
+        text-align: center;
+      }
+
+      .radiobuttons {
+        text-align: left;
+        margin: 2em auto;
+        border: solid violet 3px;
+        border-radius: 20px;
+        padding: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- h2{Computer Choice}+h2#CompChoice+h2{Player Choice: }+h2#UserChoice+h2{Results:}+h2#result+button#choices.rock*3 -->
+    <div id="wrapper">
+      <h2 style="background-color: violet;">Computer Choice:</h2>
+      <h2 id="computer-choice"></h2>
+
+      <h2 style="background-color: rgb(84, 170, 170);">Player Choice:</h2>
+      <h2 id="user-choice"></h2>
+
+      <h2 style="background-color: yellow;">Results:</h2>
+      <h2 id="result" style="color: red;"></h2>
+
+      <!-- buttons-->
+      <h3>To make your choice</h3>
+      <h3>click one of the BUTTONS</h3>
+      <button class="choices" id="rock" style="background-color: yellow;">
+        ROCK
+      </button>
+      <button class="choices" id="paper" style="background-color: yellow;">
+        PAPER
+      </button>
+      <button class="choices" id="scissors" style="background-color: yellow;">
+        SCISSORS
+      </button>
+
+      <!-- radio buttons-->
+      <div class="radiobuttons">
+        <h3>...or click on the RADIO BUTTON</h3>
+
+        <!-- first -->
+        <input type="radio" id="rock" value="" name="RB" class="choices" />
+        <lable for="rock">Rock</lable>
+        <br />
+        <!-- next -->
+        <input type="radio" id="paper" value="" name="RB" class="choices" />
+        <lable for="paper">Paper</lable>
+        <br />
+
+        <!-- next -->
+        <input type="radio" id="scissors" value="" name="RB" class="choices" />
+        <lable for="scissors">Scissors</lable>
+        <br />
+      </div>
+      <h1>To play one more time just refresh the page!</h1>
+    </div>
+  </body>
+  <script src="JS.js" charset="utf-8"></script>
+</html>
